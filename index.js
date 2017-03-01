@@ -1,4 +1,4 @@
-const isEqual = require('lodash.isEqual')
+const isEqual = require('lodash.isequal')
 
 const maybeUpsert = (oldDoc, newDoc) => {
   const revved = Object.assign({}, newDoc, {
