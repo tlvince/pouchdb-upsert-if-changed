@@ -1,0 +1,43 @@
+{
+  "name": "pouchdb-upsert-if-changed",
+  "version": "0.0.0-development",
+  "description": "Upsert if unchanged plugin for PouchDB",
+  "main": "index.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm test",
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlvince/pouchdb-upsert-if-changed.git"
+  },
+  "keywords": [
+    "pouchdb",
+    "upsert",
+    "isequal"
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
+  "engines": {
+    "node": ">=6"
+  },
+  "bugs": {
+    "url": "https://github.com/tlvince/pouchdb-upsert-if-changed/issues"
+  },
+  "homepage": "https://github.com/tlvince/pouchdb-upsert-if-changed#readme",
+  "dependencies": {
+    "lodash.isequal": ">=4 <5",
+    "pouchdb-upsert": ">=2 <3"
+  },
+  "devDependencies": {
+    "husky": "0.12.0",
+    "standard": "9.0.0",
+    "validate-commit-msg": "2.8.2",
+    "semantic-release": "6.3.2"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
